@@ -26,11 +26,51 @@ pegarPersonagem = () => {
         }
     }).then((response) => response.json()).then((data) => {
         imagem.src = data.image;
-        imagem.src = data.name;
+        imagem.alt = data.name;
         nomeDoPersonagem.innerHTML = data.name;
         especie.innerHTML = data.species;
         condicao.innerHTML = data.status;
     });
 }
 
-botao.onclick = pegarPersonagem;
+pegarPersonagemDois = () => {
+    let numeroAleatorio = gerarValorAleatorio();
+    return fetch(`https://rickandmortyapi.com/api/character/${numeroAleatorio}`, {
+        method:'GET',
+        headers: {
+            Accept: 'application/json',
+            "Content-type": 'application/json'
+        }
+    }).then((response) => response.json()).then((data) => {
+        imagemDois.src = data.image;
+        imagemDois.alt = data.name;
+        nomeDoPersonagemDois.innerHTML = data.name;
+        especieDois.innerHTML = data.species;
+        condicaoDois.innerHTML = data.status;
+    });
+}
+
+pegarPersonagemTres = () => {
+    let numeroAleatorio = gerarValorAleatorio();
+    return fetch(`https://rickandmortyapi.com/api/character/${numeroAleatorio}`, {
+        method:'GET',
+        headers: {
+            Accept: 'application/json',
+            "Content-type": 'application/json'
+        }
+    }).then((response) => response.json()).then((data) => {
+        imagemTres.src = data.image;
+        imagemTres.alt = data.name;
+        nomeDoPersonagemTres.innerHTML = data.name;
+        especieTres.innerHTML = data.species;
+        condicaoTres.innerHTML = data.status;
+    });
+}
+
+pegarTresPersonagens = () => {
+    pegarPersonagem();
+    pegarPersonagemDois();
+    pegarPersonagemTres();
+}
+
+botao.onclick = pegarTresPersonagens;
