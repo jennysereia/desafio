@@ -43,4 +43,5 @@ main > section button {
 main > section button:hover {
     background-color: #97ce4c;
     color: white;
+    cursor: pointer;
 }
