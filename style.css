@@ -75,3 +75,11 @@ main > section button:hover {
     list-style-type: none;
     width: 90%;
 }
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+
+}
