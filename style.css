@@ -39,3 +39,8 @@ main > section button {
     padding: 9px 23px;
     text-transform: uppercase;
 }
+
+main > section button:hover {
+    background-color: #97ce4c;
+    color: white;
+}
