@@ -12,9 +12,13 @@ const nomeDoPersonagem = document.querySelector('#nome');
 const nomeDoPersonagemDois = document.querySelector('#nomeDois');
 const nomeDoPersonagemTres = document.querySelector('#nomeTres');
 
+gerarValorAleatorio = () => {
+    return Math.floor(Math.random() * 671);
+}
 
 pegarPersonagem = () => {
-    return fetch(`https://rickandmortyapi.com/api/character/2`, {
+    let numeroAleatorio = gerarValorAleatorio();
+    return fetch(`https://rickandmortyapi.com/api/character/${numeroAleatorio}`, {
         method:'GET',
         headers: {
             Accept: 'application/json',
