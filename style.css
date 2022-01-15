@@ -91,3 +91,30 @@ main > section button:hover {
     padding: 10px;
     transition: 0.3s;
 }
+
+#detalhes-container > li {
+    align-items: baseline;
+    display: flex;
+}
+
+#detalhes-container-dois > li {
+    align-items: baseline;
+    display: flex;
+}
+
+#detalhes-container-tres > li {
+    align-items: baseline;
+    display: flex;
+}
+
+#detalhes-container > li p {
+    color: #97ce4c;
+}
+
+#detalhes-container-dois > li p {
+    color: #97ce4c;
+}
+
+#detalhes-container-tres > li p {
+    color: #97ce4c;
+}
