@@ -81,5 +81,14 @@ main > section button:hover {
     flex-flow: row wrap;
     justify-content: center;
     margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    border: none;
+    margin: 2px;
+    padding: 10px;
+    background-color: black;
+    transition: 0.3s;
 
 }
