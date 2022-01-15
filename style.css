@@ -84,11 +84,10 @@ main > section button:hover {
 }
 
 .column {
-    flex: 1;
+    background-color: black;
     border: none;
+    flex: 1;
     margin: 2px;
     padding: 10px;
-    background-color: black;
     transition: 0.3s;
-
 }
